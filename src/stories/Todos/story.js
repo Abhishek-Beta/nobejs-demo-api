@@ -21,7 +21,6 @@ const authorize = ({ prepareResult }) => {
 const handle = async ({ prepareResult, storyName }) => {
   try {
     const todosList = await knex("items").select('id','name')
-    console.log(todosList);
     return todosList
   } catch (error) {
     throw error

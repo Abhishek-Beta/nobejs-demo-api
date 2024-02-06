@@ -3,7 +3,6 @@ const findKeysFromRequest = requireUtil("findKeysFromRequest");
 
 const prepare = ({ reqQuery, reqBody, reqParams }) => {
   const payload = findKeysFromRequest(reqQuery, ["id", "name"]);
-
   return payload;
 };
 

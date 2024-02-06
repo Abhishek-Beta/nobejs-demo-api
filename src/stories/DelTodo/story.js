@@ -2,7 +2,8 @@ const knex = requireKnex();
 const findKeysFromRequest = requireUtil("findKeysFromRequest");
 
 const prepare = ({ reqQuery, reqBody, reqParams }) => {
-  const payload = findKeysFromRequest(reqQuery, ["id", "name"]);
+  const payload = findKeysFromRequest(reqQuery, ["id"]);
+  console.log(payload);
   return payload;
 };
 
